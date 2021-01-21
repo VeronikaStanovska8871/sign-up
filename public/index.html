@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="box-border p-4 h-screen flex flex-col justify-center">
+    <form class="flex flex-col w-full my-0 mx-auto sm:w-96">
+      <div class="flex flex-col mb-6 sm:flex-row sm:items-center">
+        <label
+          for="name"
+          class="text-gray-400 font-bold sm:w-40 sm:text-right sm:pr-4"
+          >Full name</label
+        >
+        <input type="text" class="border-none bg-input-bg-color text-input-text-color py-2 px-4 mt-2 focus:outline-outline-field sm:w-field sm:mt-0" id="name" />
+      </div>
+      <div class="flex flex-col mb-6 sm:flex-row sm:items-center">
+        <label
+          for="password"
+          class="text-gray-400 font-bold sm:w-40 sm:text-right sm:pr-4"
+          >Password</label
+        >
+        <input type="password" class="border-none bg-input-bg-color text-input-text-color py-2 px-4 mt-2 focus:outline-outline-field sm:w-field sm:mt-0" id="password" />
+      </div>
+      <div class="sm:flex sm:items-center mb-6 sm:ml-margin-62">
+        <input type="checkbox" id="newsletter" class="mr-4 ml-0" />
+        <label for="newsletter" class="text-newsletter-label font-bold text-xs"
+          >Send me your newsletter!</label
+        >
+      </div>
+      <div class="sign-up-wrapper sm:ml-margin-62">
+        <div class="bg-sign-up-button sm:inline text-white pt-1 pb-2 px-4 rounded-button-radius cursor-pointer font-bold hover:bg-sign-up-hover">Sign up</div>
+      </div>
+    </form>
+  </body>
+</html>
